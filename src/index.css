@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.my-container {
+    @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-10;
+  }
+
+.active {
+    @apply font-medium tracking-wide text-cyan-200 transition-colors duration-200 bg-gradient-to-r  from-orange-600 via-orange-500 to-orange-400 rounded-full;
+  }
+
+  .text-color {
+    @apply bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 text-transparent bg-clip-text;
+  }
+
+  
+.btn-primary {
+    @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-xl   text-cyan-100 hover:bg-indigo-400 bg-gradient-to-r from-blue-800 via-blue-600 to-blue-300 inline-block;
+  }
