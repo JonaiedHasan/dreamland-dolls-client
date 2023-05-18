@@ -1,16 +1,18 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Components/AuthProvider';
+import Swal from 'sweetalert2'
+
 
 const AddToys = () => {
     const { user } = useContext(AuthContext);
     console.log(user)
 
-    const handleAddDoll = () =>{
+    const handleAddDoll = (event) =>{
         event.preventDefault();
 
         const form = event.target;
-        const name = form.name.value;
+        const dollName = form.dollName.value;
         const sellerName = form.sellerName.value;
         const userEmail = form.userEmail.value;
         const subCategory = form.subCategory.value;
@@ -20,10 +22,35 @@ const AddToys = () => {
         const photo = form.photo.value;
         const details = form.details.value;
 
-        const newDoll = {name,sellerName,userEmail,subCategory,price,rating,quantity,photo,details}
-        console.log(newDoll)
+        const newToy = {dollName,sellerName,userEmail,subCategory,price,rating,quantity,photo,details}
+        console.log(newToy)
+         
+        // send the data to the server
+        fetch('http://localhost:5000/allToys',{
+            method:'POST',
+            headers:{
+                'content-type' : 'application/json'
+            },
+            body:JSON.stringify(newToy)
+        })
+        .then(res => res.json())
+        .then(data => {console.log(data);
+         
+             if(data.insertedId){
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Toys added Successfully',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                  })
+             }
+         })
 
-        form.reset()
+
+
+
+
+        // form.reset()
         
     }
     return (
@@ -35,10 +62,10 @@ const AddToys = () => {
                 <div className='md:flex gap-4'>
                     <div className="form-control md:w-1/2">
                         <label className="label">
-                            <span className="label-text">Toy Name</span>
+                            <span className="label-text">Doll Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name='name' placeholder="Toy Name" className="input input-bordered md:w-full" />
+                            <input type="text" name='dollName' placeholder="Doll Name" className="input input-bordered md:w-full" />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2">

@@ -1,15 +1,17 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import TabelRow from './TabelRow';
+import { AuthContext } from '../../Components/AuthProvider';
 
 const MyToys = () => {
 
+    const {user} = useContext(AuthContext);
     const [toys, setToys] = useState([]);
     useEffect( ()=>{
-        fetch('toys.json')
+        fetch(`http://localhost:5000/myToys/${user?.email}`)
         .then(res => res.json())
         .then(data => setToys(data))
-    },[])
+    },[user])
 
     return (
         <div>
