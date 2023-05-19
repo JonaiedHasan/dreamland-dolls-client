@@ -8,9 +8,9 @@ const ToysCard = ({toy}) => {
     const {_id, dollName,sellerName, rating,photo,subCategory,description,price,quantity} = toy;
     return (
         <div>
-             <div className="card border border-orange-400 card-side bg-base-100 shadow-xl">
+             <div className="card bg-pink-100 card-side bg-base-100 shadow-xl">
         <figure>
-          <img src={photo} alt="chef photo" className="w-52 h-52" />
+          <img  src={photo} alt="chef photo" className="w-52 h-52 rounded-md" />
         </figure>
         <div className="card-body">
           <h2 className="card-title text-3xl text-color  font-bold">{dollName}</h2>
@@ -27,7 +27,7 @@ const ToysCard = ({toy}) => {
             <div>{rating}</div>
           </div> */}
           <div className="card-actions justify-end">
-            <Link to={`/toysDetail/${_id}`}><button className="btn btn-outlined">View Details</button></Link>
+            <Link to={`/toysDetail/${_id}`}><button className="btn btn-primary">View Details</button></Link>
           </div>
         </div>
       </div>

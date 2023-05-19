@@ -19,21 +19,24 @@ const ToysDetails = () => {
 
                     <div className="w-2/3 ml-10 my-10 flex flex-col justify-center gap-6 mr-4">
                         <h2 className="card-title text-4xl text-color font-bold">{dollName}</h2>
-                        <p className="text-slate-400">Category:{subCategory}</p>
-                        <p>Seller:{sellerName}</p>
                         <p className="text-slate-400">{details}</p>
-                        <div className="font-semibold flex flex-col gap-4">
-                            <p>Email:{userEmail}</p>
-                            <p>Price:{price}</p>
-                            <p>Available Quantity:{quantity}</p>
-                            <p>{details}</p>
+                        <p className='font-bold text-lg'>Seller: {sellerName}</p>
+
+                        <div className="font-semibold flex flex-col gap-7">
+                            <p>Email: {userEmail}</p>
+                            <div className='flex gap-28'>
+                                <p>Price: ${price}</p>
+                                <p>Available Quantity: {quantity}</p>
+                            </div>
+                            <p >Category:  {subCategory}</p>
+                            {/* <p>{details}</p> */}
                             <Rating
                                 style={{ maxWidth: 100 }}
                                 value={rating}
                                 className="text-yellow-400 mt-6"
                                 readOnly
                             />
-                            <p>Rating:{rating}</p>
+                            <p>Rating: {rating}</p>
                         </div>
                     </div>
                     <figure className='w-1/3'>

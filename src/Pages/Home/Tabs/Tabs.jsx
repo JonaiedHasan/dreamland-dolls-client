@@ -1,41 +1,69 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Tabs.css'
+import CategoryToy from './CategoryToy';
 const Tabs = () => {
 
-    const [currentTab, setCurrentTab] = useState('1');
+    const [currentTab, setCurrentTab] = useState('FashionDolls');
     const tabs = [
         {
             id: 1,
-            tabTitle: 'Tab 1',
+            tabTitle: 'FashionDolls',
             title: 'Title 1',
             content: 'Las tabs se generan automáticamente a partir de un array de objetos, el cual tiene las propiedades: id, tabTitle, title y content.'
         },
         {
             id: 2,
-            tabTitle: 'Tab 2',
+            tabTitle: 'Action Figures',
             title: 'Title 2',
             content: 'Contenido de tab 2.'
         },
         {
             id: 3,
-            tabTitle: 'Tab 3',
+            tabTitle: 'Baby Dolls',
             title: 'Title 3',
             content: 'Contenido de tab 3.'
         }
     ];
 
-    const handleTabClick = (e) => {
-        setCurrentTab(e.target.id);
-    }
+    // const handleTabClick = (e) => {
+    //     setCurrentTab(e.target.id);
+    //     console.log(e)
+    // }
 
+    const [toys, setToys] = useState([]);
+    useEffect( ()=>{
+        fetch(`http://localhost:5000/allToys/${currentTab}`,{
+            method:'GET'
+        })
+        // fetch('toys.json')
+        .then(res => res.json())
+        .then(data => setToys(data))
+    },[currentTab])
+
+    console.log(currentTab)
+
+    const handleCategory = Category =>{
+        setCurrentTab(Category)
+        console.log(Category);
+    }
+    
+    console.log(toys);
     return (
         <div className='container'>
             <div className='tabs'>
                 {tabs.map((tab, i) =>
-                    <button key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>
+                    <button
+                     key={i} 
+                     id={tab.id}
+                     disabled={currentTab === `${tab.tabTitle}`}
+                    //  onClick={(handleTabClick)}
+                    onClick={()=>handleCategory(tab.tabTitle)}
+                     >
+                        {tab.tabTitle}</button>
                 )}
             </div>
+            
             <div className='content  md:flex '>
                 {/* {tabs.map((tab, i) =>
                     <div key={i}>
@@ -45,27 +73,18 @@ const Tabs = () => {
                             </div>}
                     </div>
                 )} */}
+                 
+                
+{
+                   toys.slice(1,3).map(toy => <CategoryToy
+                     key={toy._id}
+                     
+                     toy={toy}
+                     ></CategoryToy>)
+               }
 
-                <div className="m-3 card card-compact w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div className=" m-3 card card-compact w-96 bg-base-100 shadow-xl">
-                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-                    <div className="card-body">
-                        <h2 className="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
+               
+              
             </div>
         </div>
     );

@@ -50,7 +50,7 @@ const AddToys = () => {
 
 
 
-        // form.reset()
+        form.reset()
         
     }
     return (

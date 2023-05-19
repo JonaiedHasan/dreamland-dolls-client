@@ -51,7 +51,7 @@ const UpdateToys = () => {
 
 
 
-        // form.reset()
+        form.reset()
 
     }
     return (

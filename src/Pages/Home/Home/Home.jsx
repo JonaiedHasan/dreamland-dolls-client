@@ -2,13 +2,14 @@
 import React from 'react';
 import Banner from '../Banner';
 import Tabs from '../Tabs/Tabs';
+import Pic from '../Pic';
 
 const Home = () => {
     return (
         <div>
-            <h1>this is home</h1>
             <Banner></Banner>
             <Tabs></Tabs>
+            <Pic></Pic>
         </div>
     );
 };

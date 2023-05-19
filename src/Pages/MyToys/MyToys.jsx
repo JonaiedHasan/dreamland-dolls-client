@@ -20,7 +20,7 @@ const MyToys = () => {
            <p className='text-center font-semibold text-5xl text-color my-10'>My Toys</p>
 
             <div className="overflow-x-auto w-full shadow-xl my-5">
-                <table className="table w-full">
+                <table className=" table w-full h">
                     {/* head */}
                     <thead>
                         <tr>
@@ -34,7 +34,7 @@ const MyToys = () => {
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody className=''>
                         {/* row 1 */}
 
                         {
