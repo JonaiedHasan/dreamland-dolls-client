@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
-const TabelRow = ({ toy }) => {
+const TabelRow = ({ toy ,toys, setToys}) => {
     console.log(toy)
     const { _id, dollName, sellerName, userEmail, subCategory, price, rating, quantity, photo, details } = toy;
 
@@ -29,9 +29,11 @@ const TabelRow = ({ toy }) => {
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',
-                                'Your file has been deleted.',
+                                'Your Toy has been deleted.',
                                 'success'
                             )
+                            const remaining = toys.filter(toy => toy._id !== _id);
+                            setToys(remaining)
                         }
                     })
             }
@@ -63,6 +65,9 @@ const TabelRow = ({ toy }) => {
                 <button className="btn btn-outline btn-ghost btn-xs">Update</button>
                 </Link>
               
+              {/* <button className="btn btn-outline btn-ghost btn-xs">Update</button>
+               */}
+
             </th>
 
         </tr>

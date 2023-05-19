@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const ToysCard = ({toy}) => {
     console.log(toy);
-    const {_id,toyName,sellerName, rating,photo,subCategory,description,price,quantity} = toy;
+    const {_id, dollName,sellerName, rating,photo,subCategory,description,price,quantity} = toy;
     return (
         <div>
              <div className="card border border-orange-400 card-side bg-base-100 shadow-xl">
@@ -13,7 +13,7 @@ const ToysCard = ({toy}) => {
           <img src={photo} alt="chef photo" className="w-52 h-52" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-3xl text-color  font-bold">{toyName}</h2>
+          <h2 className="card-title text-3xl text-color  font-bold">{dollName}</h2>
           <div className='font-semibold flex flex-col gap-2'>
           <p className='text-lg font-semibold'>Seller: {sellerName}</p>
           <p>Sub-category: {subCategory}</p>

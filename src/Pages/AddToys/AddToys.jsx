@@ -55,7 +55,7 @@ const AddToys = () => {
     }
     return (
         <div className='bg-[#F4F3F0] p-20'>
-            <h1 className='text-3xl text-center font-bold'>Add a Toy</h1>
+            <h1 className='text-3xl mb-8 text-center font-bold'>Add a Toy</h1>
 
             <form  onSubmit={handleAddDoll}>
                 {/* 1st row */}
@@ -154,7 +154,7 @@ const AddToys = () => {
                         </label>
                     </div>
                 </div>
-                <input type="submit" className='btn btn-block' value="Add Doll" />
+                <input type="submit" className='btn btn-block btn-primary' value="Add Toy" />
             </form>
 
         </div>

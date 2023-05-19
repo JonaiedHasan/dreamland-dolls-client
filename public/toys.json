@@ -1,104 +1,116 @@
- [
+
+    [
+      {
+        "sellerName": "Alice Smith",
+        "dollName": "Princess Sparkle",
+        "subCategory": "Fashion Dolls",
+        "price": 19.99,
+        "quantity": 50,
+        "rating": 4.5,
+        "details": "A beautiful fashion doll with sparkling dress and accessories.",
+        "photo": "https://ae01.alicdn.com/kf/Sfdcdbd030524430db63c952908badbd1o/NK-1-Set-Fashion-Office-Skirt-Modern-Outfit-Coat-White-Top-Pu-Dress-Clothes-for-Barbie.jpg_.webp",
+        "userEmail": "alice.smith@example.com"
+      },
       {
         "sellerName": "John Doe",
-        "dollName": "Teddy Bear",
-        "subCategory": "Stuffed Animals",
-        "price": 10.99,
-        "quantity": 5,
-        "rating": 4.5,
-        "details": "Soft and cuddly teddy bear for all ages. Perfect for hugging and snuggling.",
-        "photo": "https://ae01.alicdn.com/kf/Sfdcdbd030524430db63c952908badbd1o/NK-1-Set-Fashion-Office-Skirt-Modern-Outfit-Coat-White-Top-Pu-Dress-Clothes-for-Barbie.jpg_.webp"
-      },
-      { 
-        "sellerName": "Emily Smith",
-        "dollName": "LEGO Set",
-        "subCategory": "Building Blocks",
-        "price": 29.99,
-        "quantity": 3,
-        "rating": 4.0,
-        "details": "Let your imagination soar with this LEGO set. Build amazing structures and create your own adventures.",
-        "photo": "https://ae01.alicdn.com/kf/Hccddfb41667b4715bbd4666f7ffeefe3J/18-Inch-Girl-Doll-Clothes-Pu-Leather-Coat-for-43cm-Born-Baby-Doll-Clothes-for-38cm.jpg_Q90.jpg_.webp"
-      },
-      {
-        "sellerName": "Mark Johnson",
-        "dollName": "Barbie Doll",
-        "subCategory": "Fashion Dolls",
+        "dollName": "Superhero Action",
+        "subCategory": "Action Figures",
         "price": 14.99,
-        "quantity": 8,
-        "rating": 4.8,
-        "details": "Bring glamour and style to your playtime with this beautiful Barbie doll. Includes trendy outfits and accessories.",
-        "photo": "https://example.com/toy_images/barbie_doll.jpg"
-      },
-      {
-        "sellerName": "Sarah Thompson",
-        "dollName": "Remote Control Car",
-        "subCategory": "Vehicles",
-        "price": 19.99,
-        "quantity": 2,
-        "rating": 3.7,
-        "details": "Experience the thrill of speed with this remote control car. Perfect for racing and performing stunts.",
-        "photo": "https://example.com/toy_images/remote_control_car.jpg"
-      },
-      {
-        "sellerName": "David Wilson",
-        "dollName": "Puzzle Set",
-        "subCategory": "Educational Toys",
-        "price": 12.99,
-        "quantity": 6,
+        "quantity": 35,
         "rating": 4.2,
-        "details": "Challenge your mind with this puzzle set. Improve problem-solving skills while having fun.",
-        "photo": "https://example.com/toy_images/puzzle_set.jpg"
+        "details": "An action figure of a superhero with poseable limbs and realistic features.",
+        "photo": "https://ae01.alicdn.com/kf/Hccddfb41667b4715bbd4666f7ffeefe3J/18-Inch-Girl-Doll-Clothes-Pu-Leather-Coat-for-43cm-Born-Baby-Doll-Clothes-for-38cm.jpg_Q90.jpg_.webp",
+        "userEmail": "john.doe@example.com"
       },
       {
-        "sellerName": "Olivia Brown",
-        "dollName": "Play Kitchen Set",
-        "subCategory": "Pretend Play",
-        "price": 34.99,
-        "quantity": 4,
-        "rating": 4.6,
-        "details": "Let your little one's imagination run wild with this play kitchen set. Cook, serve, and have fun!",
-        "photo": "https://example.com/toy_images/play_kitchen_set.jpg"
+        "sellerName": "Emma Johnson",
+        "dollName": "Baby Doll",
+        "subCategory": "Baby Dolls",
+        "price": 24.99,
+        "quantity": 60,
+        "rating": 4.8,
+        "details": "A soft and cuddly baby doll with realistic features and removable clothes.",
+        "photo": "doll3.jpg",
+        "userEmail": "https://ae01.alicdn.com/kf/H03e48708c5b147069a2789595b4bcd38c.jpg"
       },
       {
-        "sellerName": "Michael Davis",
-        "dollName": "Art Supplies Kit",
-        "subCategory": "Arts and Crafts",
-        "price": 17.99,
-        "quantity": 7,
-        "rating": 4.9,
-        "details": "Unleash your creativity with this art supplies kit. Paint, draw, and craft your way to masterpieces.",
-        "photo": "https://example.com/toy_images/art_supplies_kit.jpg"
-      },
-      {
-        "sellerName": "Emma Wilson",
-        "dollName": "Science Experiment Set",
-        "subCategory": "Science and Discovery",
-        "price": 22.99,
-        "quantity": 3,
-        "rating": 4.3,
-        "details": "Explore the wonders of science with this experiment set. Conduct exciting experiments and learn new things.",
-        "photo": "https://example.com/toy_images/science_experiment_set.jpg"
-      },
-      {
-        "sellerName": "Daniel Thompson",
-        "dollName": "Dress-Up Costume Set",
-        "subCategory": "Role Play",
-        "price": 16.99,
-        "quantity": 5,
+        "sellerName": "Michael Brown",
+        "dollName": "Mermaid Magic",
+        "subCategory": "Fashion Dolls",
+        "price": 29.99,
+        "quantity": 25,
         "rating": 4.7,
-        "details": "Transform into your favorite characters with this dress-up costume set. Perfect for imaginative play.",
-        "photo": "https://example.com/toy_images/dress_up_costume_set.jpg"
+        "details": "A mermaid fashion doll with magical color-changing tail and accessories.",
+        "photo": "https://images.unsplash.com/photo-1612506001235-f0d0892aa11b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9sbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60",
+        "userEmail": "michael.brown@example.com"
       },
       {
-        "sellerName": "Sophia Anderson",
-        "dollName": "Building Blocks Set",
-        "subCategory": "Construction Toys",
-        "price": 25.99,
-        "quantity": 4,
-        "rating": 4.5,
-        "details": "Build amazing structures and unleash your creativity with this building blocks set.",
-        "photo": "https://example.com/toy_images/building_blocks_set.jpg"
+        "sellerName": "Emily Wilson",
+        "dollName": "Adventure Explorer",
+        "subCategory": "Action Figures",
+        "price": 12.99,
+        "quantity": 40,
+        "rating": 4.3,
+        "details": "An action figure of an adventurous explorer with realistic accessories and gear.",
+        "photo": "https://images.unsplash.com/photo-1613626253486-e2d1d9fd9bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRvbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
+        "userEmail": "emily.wilson@example.com"
+      },
+      {
+        "sellerName": "Daniel Taylor",
+        "dollName": "Cuddle Cutie",
+        "subCategory": "Baby Dolls",
+        "price": 19.99,
+        "quantity": 55,
+        "rating": 4.6,
+        "details": "A lovable and huggable baby doll with soft fabric and adorable features.",
+        "photo": "https://images.unsplash.com/photo-1632456960235-4b72d18fbecd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGRvbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60",
+        "userEmail": "daniel.taylor@example.com"
+      },
+      {
+        "sellerName": "Sophia Clark",
+        "dollName": "Fairy Tale Princess",
+        "subCategory": "Fashion Dolls",
+        "price": 22.99,
+        "quantity": 30,
+        "rating": 4.4,
+        "details": "A princess fashion doll inspired by fairy tales with elegant outfits and accessories.",
+        "photo": "https://p.kindpng.com/picc/s/753-7532880_barbie-doll-girly-playful-mattel-barbie-chic-doll.png",
+        "userEmail": "sophia.clark@example.com"
+      },
+      {
+        "sellerName": "William Anderson",
+        "dollName": "Ninja Warrior",
+        "subCategory": "Action Figures",
+        "price": 16.99,
+        "quantity": 45,
+        "rating": 4.1,
+        "details": "An action figure of a ninja warrior with weapons and martial arts poses.",
+        "photo": "https://m.media-amazon.com/images/I/81-ghmIh23L.jpg",
+        "userEmail": "william.anderson@example.com"
+      },
+      {
+        "sellerName": "Olivia White",
+        "dollName": "Sleepy Time",
+        "subCategory": "Baby Dolls",
+        "price": 27.99,
+        "quantity": 20,
+        "rating": 4.9,
+        "details": "A sleeping baby doll with a soft blanket and a variety of bedtime accessories.",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHnfMhkVJIUNmk1Q5S_jyEEBNqIwno-bwjbB1pGsT60QwpPATyBXfGnghy-SNu2oaWUc&usqp=CAU",
+        "userEmail": "olivia.white@example.com"
+      },
+      {
+        "sellerName": "Benjamin Turner",
+        "dollName": "Glamour Diva",
+        "subCategory": "Fashion Dolls",
+        "price": 32.99,
+        "quantity": 15,
+        "rating": 4.7,
+        "details": "A glamorous fashion doll with trendy outfits, stylish accessories, and a catwalk stage.",
+        "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSYwwPBw1OCKHGVFn3XJYIMGn3hEYBIK10imaoxRIeGO547e6QTqEKmdyQr9-OJCb3vA&usqp=CAU",
+        "userEmail": "benjamin.turner@example.com"
       }
     ]
+    
   
   

@@ -13,6 +13,8 @@ const MyToys = () => {
         .then(data => setToys(data))
     },[user])
 
+    const [dToys, setDtoys] = useState(toys)
+
     return (
         <div>
            <p className='text-center font-semibold text-5xl text-color my-10'>My Toys</p>
@@ -39,6 +41,8 @@ const MyToys = () => {
                             toys.map(toy => <TabelRow
                                  key={toy._id}
                                  toy={toy}
+                                 toys={toys}
+                                 setToys={setToys}
                             ></TabelRow>)
                         }
                     </tbody>
