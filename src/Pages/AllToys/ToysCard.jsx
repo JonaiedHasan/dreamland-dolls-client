@@ -3,36 +3,25 @@ import React from 'react';
 import { TbHeartFilled } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
-const ToysCard = ({toy}) => {
-    console.log(toy);
-    const {_id, dollName,sellerName, rating,photo,subCategory,description,price,quantity} = toy;
-    return (
-        <div>
-             <div className="card bg-pink-100 card-side bg-base-100 shadow-xl">
-        <figure>
-          <img  src={photo} alt="chef photo" className="w-52 h-52 rounded-md" />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title text-3xl text-color  font-bold">{dollName}</h2>
-          <div className='font-semibold flex flex-col gap-2'>
-          <p className='text-lg font-semibold'>Seller: {sellerName}</p>
-          <p>Sub-category: {subCategory}</p>
-          <p>Price: ${price}</p>
-          <p>Quantity: {quantity}</p>
-          </div>
-          {/* <div className="flex items-center gap-2">
-            <div>
-              <TbHeartFilled className="text-blue-700"></TbHeartFilled>
-            </div>
-            <div>{rating}</div>
-          </div> */}
-          <div className="card-actions justify-end">
-            <Link to={`/toysDetail/${_id}`}><button className="btn btn-primary">View Details</button></Link>
-          </div>
-        </div>
-      </div>
-        </div>
-    );
+const ToysCard = ({ toy }) => {
+  console.log(toy);
+  const { _id, dollName, sellerName, rating, photo, subCategory, description, price, quantity } = toy;
+  return (
+    <tr>
+      <th>
+        
+      </th>
+      <td>{sellerName}</td>
+      <td>{dollName}</td>
+      <td>{subCategory}</td>
+      <td>${price}</td>
+      <td>{quantity}</td>
+      <th>
+      <Link to={`/toysDetail/${_id}`}><button className=" transition duration-200 text-white shadow-md  md:mb-0  px-4 py-2 md:px-5 md:py-3   rounded-xl   bg-gradient-to-r from-pink-800 via-pink-500 to-pink-800 inline-block">View Details</button></Link>
+      </th>
+
+    </tr>
+  );
 };
 
 export default ToysCard;

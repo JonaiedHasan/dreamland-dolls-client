@@ -14,13 +14,13 @@ const Tabs = () => {
         },
         {
             id: 2,
-            tabTitle: 'Action Figures',
+            tabTitle: 'ActionFigures',
             title: 'Title 2',
             content: 'Contenido de tab 2.'
         },
         {
             id: 3,
-            tabTitle: 'Baby Dolls',
+            tabTitle: 'BabyDolls',
             title: 'Title 3',
             content: 'Contenido de tab 3.'
         }
@@ -33,9 +33,7 @@ const Tabs = () => {
 
     const [toys, setToys] = useState([]);
     useEffect( ()=>{
-        fetch(`http://localhost:5000/allToys/${currentTab}`,{
-            method:'GET'
-        })
+        fetch(`http://localhost:5000/cToys/${currentTab}`)
         // fetch('toys.json')
         .then(res => res.json())
         .then(data => setToys(data))
@@ -51,7 +49,7 @@ const Tabs = () => {
     console.log(toys);
     return (
         <div className='container'>
-            <div className='tabs'>
+            <div className='tabs md:flex-none'>
                 {tabs.map((tab, i) =>
                     <button
                      key={i} 

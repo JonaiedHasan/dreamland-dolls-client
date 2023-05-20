@@ -8,7 +8,7 @@
   }
 
 .active {
-    @apply font-medium tracking-wide text-cyan-200 transition-colors duration-200 bg-gradient-to-r  from-blue-600 via-blue-500 to-blue-400 rounded-full;
+    @apply font-medium tracking-wide text-cyan-200 transition-colors duration-200 bg-gradient-to-r  from-pink-600 via-pink-500 to-pink-400 rounded-full;
   }
 
   .text-color {
