@@ -2,14 +2,18 @@
 import React from 'react';
 import Banner from '../Banner';
 import Tabs from '../Tabs/Tabs';
-import Pic from '../Pic';
+import PicGallery from '../PicGallery';
+import OfferSection from '../OfferSection';
+import FeatureSection from '../FeatureSection';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
+            <PicGallery></PicGallery>
             <Tabs></Tabs>
-            {/* <Pic></Pic> */}
+            <OfferSection></OfferSection>
+            <FeatureSection></FeatureSection>
         </div>
     );
 };

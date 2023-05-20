@@ -33,7 +33,7 @@ const Tabs = () => {
 
     const [toys, setToys] = useState([]);
     useEffect( ()=>{
-        fetch(`http://localhost:5000/cToys/${currentTab}`)
+        fetch(`http://localhost:5000/categoryToys/${currentTab}`)
         // fetch('toys.json')
         .then(res => res.json())
         .then(data => setToys(data))
@@ -49,9 +49,9 @@ const Tabs = () => {
     console.log(toys);
     return (
         <div className='container'>
-            <div className='tabs md:flex-none'>
+            <div className='tabs flex'>
                 {tabs.map((tab, i) =>
-                    <button
+                    <button className='w-[33%]'
                      key={i} 
                      id={tab.id}
                      disabled={currentTab === `${tab.tabTitle}`}

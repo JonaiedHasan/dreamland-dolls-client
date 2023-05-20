@@ -55,8 +55,8 @@ const UpdateToys = () => {
 
     }
     return (
-        <div className='bg-[#f6e0ec] p-20'>
-            <h1 className='text-3xl mb-8 text-center font-bold'>Update Toy</h1>
+        <div className='bg-[#f6e0ec] py-3 px-20'>
+            <h1 className='text-3xl text-center font-bold text-color'>Update Toy</h1>
 
             <form onSubmit={handleUpdateDoll}>
                 {/* 1st row */}

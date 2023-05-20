@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     /* background-color: black; */
@@ -19,29 +23,28 @@ h1 {
 }
 
 .tabs {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
 }
 
 .tabs button {
-    background-color: lightgray;
+    background-color: rgb(243, 168, 228);
     border: none;
-    color: #888888;
+    color: #5a5555;
     cursor: pointer;
     padding: 25px;
-    width: 33%;
-    background-color: rgba(255, 255, 255, 0.1);
+    /* width: 100%; */
+    /* background-color: rgba(255, 255, 255, 0.1); */
     transition: all 0.5s ease-out;
 }
 
 .tabs button:hover {
-    color: rgb(211, 204, 204);
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgb(228, 114, 206);
 }
 
 .tabs button:disabled {
-    background: linear-gradient(245.39deg, #FC65ED -35.14%, #0500FF 143.06%);
-    color: white;
+    background: linear-gradient(245.39deg, #ec59f6 -35.14%, #440c48 143.06%);
+    color: rgb(255, 255, 255);
 }
 
 .title {
@@ -82,3 +85,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 960px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        padding: 50px;
+    }
+}

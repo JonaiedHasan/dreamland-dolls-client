@@ -3,13 +3,13 @@ import React from 'react';
 import { TbHeartFilled } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
-const ToysCard = ({ toy }) => {
-  console.log(toy);
+const ToysCard = ({ toy , index }) => {
+  // console.log(toy);
   const { _id, dollName, sellerName, rating, photo, subCategory, description, price, quantity } = toy;
   return (
     <tr>
       <th>
-        
+        {index + 1}
       </th>
       <td>{sellerName}</td>
       <td>{dollName}</td>
