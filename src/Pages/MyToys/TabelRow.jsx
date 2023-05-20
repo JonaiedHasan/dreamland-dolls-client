@@ -62,7 +62,7 @@ const TabelRow = ({ toy ,toys, setToys}) => {
             <td>{quantity}</td>
             <th>
                 <Link to={`/updateToy/${_id}`}>
-                <button className="btn btn-outline btn-ghost btn-xs">Update</button>
+                <button className=" transition duration-200 text-white shadow-md  md:mb-0  px-4 py-2 md:px-5 md:py-3   rounded-xl   bg-gradient-to-r from-pink-800 via-pink-500 to-pink-800 inline-block">Update</button>
                 </Link>
               
               {/* <button className="btn btn-outline btn-ghost btn-xs">Update</button>

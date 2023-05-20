@@ -19,3 +19,6 @@
 .btn-primary {
     @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-lg rounded-xl   text-cyan-100 hover:bg-indigo-400 bg-gradient-to-r from-pink-800 via-pink-500 to-pink-800 inline-block;
   }
+  .btn-outlined {
+    @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-sm rounded-xl  text-white bg-pink-600 hover:bg-pink-700 hover:border-transparent border-2 border-orange-600 ;
+  }

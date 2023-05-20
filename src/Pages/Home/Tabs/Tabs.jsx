@@ -26,10 +26,6 @@ const Tabs = () => {
         }
     ];
 
-    // const handleTabClick = (e) => {
-    //     setCurrentTab(e.target.id);
-    //     console.log(e)
-    // }
 
     const [toys, setToys] = useState([]);
     useEffect( ()=>{
@@ -63,16 +59,7 @@ const Tabs = () => {
             </div>
             
             <div className='content  md:flex '>
-                {/* {tabs.map((tab, i) =>
-                    <div key={i}>
-                        {currentTab === `${tab.id}` && <div>
-                            <p className='title'>{tab.title}</p>
-                            <p>{tab.content}</p>
-                            </div>}
-                    </div>
-                )} */}
-                 
-                
+               
 {
                    toys.slice(1,3).map(toy => <CategoryToy
                      key={toy._id}

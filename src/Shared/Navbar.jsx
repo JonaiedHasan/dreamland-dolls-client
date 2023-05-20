@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
-import { TbGenderFemale } from "react-icons/tb";
+
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../Components/AuthProvider';
 
@@ -94,8 +94,8 @@ const Navbar = () => {
                     <Link to="/" className="btn btn-ghost normal-case text-2xl">
                         <div className='w-36'><img className='rounded-full' src={'https://i.ibb.co/m6FGWNd/Capture.png'} alt="" /></div>
                         {" "}
-                        {/* <TbGenderFemale className="mx-4 " />
-                        <p className="text-color">Dreamland Dolls</p> {" "} */}
+                     
+                        {/* <p className="text-color">Dreamland Dolls</p> {" "} */}
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">

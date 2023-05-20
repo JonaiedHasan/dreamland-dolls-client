@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
