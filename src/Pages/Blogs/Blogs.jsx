@@ -61,10 +61,14 @@ const Blogs = () => {
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
                     <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        4. 
+                        4. What is Nest JS ?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        <p></p>
+                        <p>
+                            NestJS is a robust and feature-rich Node.js framework that combines the benefits of TypeScript, modularity, and Angular-inspired architecture. It provides a strong foundation for building server-side applications with a focus on scalability, maintainability, and developer productivity.
+                                     <br /><br />
+                            With NestJS, you can leverage TypeScripts static typing to catch errors during development and improve code quality. Its modular structure allows you to organize your code into reusable modules, controllers for handling requests, and services for business logic. Dependency injection simplifies managing dependencies and makes testing easier.
+                        </p>
                     </div>
                 </div>
                 <div className="collapse rounded-md my-4">
