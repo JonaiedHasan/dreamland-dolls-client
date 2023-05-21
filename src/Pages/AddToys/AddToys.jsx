@@ -6,7 +6,6 @@ import Swal from 'sweetalert2'
 
 const AddToys = () => {
     const { user } = useContext(AuthContext);
-    console.log(user)
 
     const handleAddDoll = (event) =>{
         event.preventDefault();
@@ -23,10 +22,10 @@ const AddToys = () => {
         const details = form.details.value;
 
         const newToy = {dollName,sellerName,userEmail,subCategory,price,rating,quantity,photo,details}
-        console.log(newToy)
+        
          
         // send the data to the server
-        fetch('http://localhost:5000/allToys',{
+        fetch('https://toy-market-place-server-jonaiedhasan.vercel.app/allToys',{
             method:'POST',
             headers:{
                 'content-type' : 'application/json'
@@ -34,7 +33,7 @@ const AddToys = () => {
             body:JSON.stringify(newToy)
         })
         .then(res => res.json())
-        .then(data => {console.log(data);
+        .then(data => {
          
              if(data.insertedId){
                 Swal.fire({

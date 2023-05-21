@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const TabelRow = ({ toy ,toys, setToys}) => {
-    console.log(toy)
+   
     const { _id, dollName, sellerName, userEmail, subCategory, price, rating, quantity, photo, details } = toy;
 
     const handleDelete = _id => {
@@ -20,12 +20,12 @@ const TabelRow = ({ toy ,toys, setToys}) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/myToys/${_id}`,{
+                fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/myToys/${_id}`,{
                     method:'DELETE'
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data);
+                     
                         if (data.deletedCount > 0) {
                             Swal.fire(
                                 'Deleted!',

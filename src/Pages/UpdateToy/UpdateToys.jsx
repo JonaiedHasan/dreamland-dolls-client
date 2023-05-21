@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 const UpdateToys = () => {
 
     const toy = useLoaderData();
-    console.log(toy);
+    
     const { _id, dollName, sellerName, userEmail, subCategory, price, rating, quantity, photo, details } = toy;
     const handleUpdateDoll = (event) => {
         event.preventDefault();
@@ -23,10 +23,10 @@ const UpdateToys = () => {
         const details = form.details.value;
 
         const newToy = { dollName, sellerName, userEmail, subCategory, price, rating, quantity, photo, details }
-        console.log(newToy)
+        
 
         // send the data to the server
-        fetch(`http://localhost:5000/allToys/${_id}`, {
+        fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/allToys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -35,7 +35,7 @@ const UpdateToys = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+              
 
                 if (data. modifiedCount > 0) {
                     Swal.fire({

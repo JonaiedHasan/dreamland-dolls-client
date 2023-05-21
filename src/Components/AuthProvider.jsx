@@ -34,7 +34,6 @@ const AuthProvider = ({ children }) => {
                 setUser(result.user);
             })
             .catch((err) => {
-                console.log(err.message);
             });
     };
     const gitHubProvider = new GithubAuthProvider();
@@ -45,7 +44,7 @@ const AuthProvider = ({ children }) => {
                 setUser(result.user);
             })
             .catch((err) => {
-                console.log(err.message);
+                // console.log(err.message);
             });
     };
     const signIn = (email, password) => {
@@ -62,7 +61,7 @@ const AuthProvider = ({ children }) => {
                 setUser("user updated");
             })
             .catch((err) => {
-                console.log(err.message);
+                // console.log(err.message);
             });
     };
 

@@ -13,20 +13,20 @@ const MyToys = () => {
      const [change , setChange] = useState(true)
 
     useEffect( ()=>{
-        fetch(`http://localhost:5000/myToys/${user?.email}`)
+        fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/myToys/${user?.email}`)
         .then(res => res.json())
         .then(data => setToys(data))
     },[user])
 
     useEffect( ()=>{
-        fetch(`http://localhost:5000/myToysHigh?userEmail=${user?.email}`)
+        fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/myToysHigh?userEmail=${user?.email}`)
         .then(res => res.json())
         .then(data => setHigh(data))
     },[user])
 
     
     useEffect( ()=>{
-        fetch(`http://localhost:5000/myToysLow?userEmail=${user?.email}`)
+        fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/myToysLow?userEmail=${user?.email}`)
         .then(res => res.json())
         .then(data => setLow(data))
     },[user])
@@ -55,7 +55,7 @@ const MyToys = () => {
                   >
                     High Price
                   </button>
-                  <button  className={`btn btn-outline ${change && 'btn-primary'}`}
+                  <button  className={`btn btn-outline ${!change && 'btn-primary'}`}
                   onClick={handleWithLow}>
                       Low price
                   </button>

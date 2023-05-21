@@ -5,7 +5,7 @@ import ToysCard from './ToysCard';
 const AllToys = () => {
   const [toys, setToys] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/allToys')
+    fetch('https://toy-market-place-server-jonaiedhasan.vercel.app/allToys')
       // fetch('toys.json')
       .then(res => res.json())
       .then(data => setToys(data))
@@ -14,7 +14,7 @@ const AllToys = () => {
 
   //  console.log(searchText)
   // useEffect(() =>{
-  //   fetch(`http://localhost:5000/dollName/${searchText}`)
+  //   fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/dollName/${searchText}`)
   //    .then(res => res.json())
   //    .then(data =>{
   //     console.log(data);
@@ -25,7 +25,7 @@ const AllToys = () => {
   const handleSearch = event => {
     event.preventDefault();
      const name = event.target.dollName.value;
-     fetch(`http://localhost:5000/dollName/${name}`)
+     fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/dollName/${name}`)
      .then(res => res.json())
      .then(data =>{
       setToys(data);

@@ -11,7 +11,7 @@ const Navbar = () => {
         logOut()
           .then(() => { })
           .catch((err) => {
-            console.log(err.message);
+           
           });
     }
     return (
