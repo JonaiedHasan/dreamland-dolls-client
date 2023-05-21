@@ -66,7 +66,7 @@ const Blogs = () => {
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
                         <p>
                             NestJS is a robust and feature-rich Node.js framework that combines the benefits of TypeScript, modularity, and Angular-inspired architecture. It provides a strong foundation for building server-side applications with a focus on scalability, maintainability, and developer productivity.
-                                     <br /><br />
+                            <br /><br />
                             With NestJS, you can leverage TypeScripts static typing to catch errors during development and improve code quality. Its modular structure allows you to organize your code into reusable modules, controllers for handling requests, and services for business logic. Dependency injection simplifies managing dependencies and makes testing easier.
                         </p>
                     </div>
@@ -74,10 +74,17 @@ const Blogs = () => {
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
                     <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        4.
+                        5.What is MongoDB aggregate and how does it work?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        <p></p>
+                        <p>
+                            In MongoDB, the aggregate operation is a powerful tool for performing data aggregation tasks and complex computations on the documents in a collection. It allows you to process and transform data, perform calculations, and generate aggregated results.
+                            <br /><br />
+
+                            The aggregate operation works by using a pipeline of stages that sequentially process the documents in the collection. Each stage in the pipeline performs a specific operation on the documents, such as filtering, grouping, sorting, projecting, or performing mathematical operations.
+                            <br /><br />
+                            MongoDB, the aggregate operation is used for performing advanced data aggregation tasks. It works by using a pipeline of stages to process and transform documents in a collection. Each stage performs a specific operation like filtering, grouping, sorting, or projecting. Aggregation operators are used within stages to perform calculations and aggregations on the data. The aggregate operation allows you to construct complex pipelines to analyze and derive insights from your data.
+                        </p>
                     </div>
                 </div>
             </div>
