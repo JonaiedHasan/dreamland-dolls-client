@@ -25,10 +25,26 @@ const Blogs = () => {
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
                     <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        2.
+                        2.Compare SQL and NoSQL databases?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        <p></p>
+                        <p>
+
+                            SQL Databases: <br />
+
+                            Structured schema with tables and predefined columns
+                            Relational data model with SQL query language
+                            Vertical scalability, well-suited for complex queries
+                            ACID compliance for data consistency
+                            <br /><br />
+                            NoSQL Databases: <br />
+
+                            Flexible or no fixed schema
+                            Various data models (key-value, document, columnar, graph)
+                            Custom query languages or APIs
+                            Horizontal scalability, ideal for large data volumes and high-velocity workloads
+                            Emphasizes availability and partition tolerance (AP) over strong consistency (CA)
+                        </p>
                     </div>
                 </div>
                 <div className="collapse rounded-md my-4">
