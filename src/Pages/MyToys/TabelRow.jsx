@@ -20,7 +20,7 @@ const TabelRow = ({ toy ,toys, setToys}) => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/myToys/${_id}`,{
+                fetch(`http://localhost:5000/myToys/${_id}`,{
                     method:'DELETE'
                 })
                     .then(res => res.json())

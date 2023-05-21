@@ -4,7 +4,7 @@
 
 
 .my-container {
-    @apply px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-10;
+    @apply px-3 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-5;
   }
 
 .active {
@@ -22,3 +22,8 @@
   .btn-outlined {
     @apply font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-3 m-2 text-sm rounded-xl  text-white bg-pink-600 hover:bg-pink-700 hover:border-transparent border-2 border-orange-600 ;
   }
+
+  .error {
+    @apply text-red-500 text-sm m-0;
+  }
+  

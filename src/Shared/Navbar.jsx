@@ -157,9 +157,7 @@ const Navbar = () => {
                         <div className="flex justify-center items-center">
                             {" "}
                             <div>
-                                <p className="text-color text-xl font-bold mx-4">
-                                    {user.displayName}
-                                </p>
+                               
                             </div>
                             <div>
                                 <button onClick={handleLogOut} className="btn-outlined">

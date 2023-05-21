@@ -9,7 +9,7 @@ const Blogs = () => {
             <div className="App">
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
-                    <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <div className="collapse-title bg-pink-500 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
                         1.What is an access token and refresh token? How do they work and where should we store them on the client-side?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
@@ -25,7 +25,7 @@ const Blogs = () => {
                 </div>
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
-                    <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <div className="collapse-title bg-pink-500 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
                         2.Compare SQL and NoSQL databases?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
@@ -50,7 +50,7 @@ const Blogs = () => {
                 </div>
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
-                    <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <div className="collapse-title bg-pink-500 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
                         3.What is express js?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
@@ -60,7 +60,7 @@ const Blogs = () => {
                 </div>
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
-                    <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <div className="collapse-title bg-pink-500 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
                         4. What is Nest JS ?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
@@ -73,7 +73,7 @@ const Blogs = () => {
                 </div>
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
-                    <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                    <div className="collapse-title bg-pink-500 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
                         5.What is MongoDB aggregate and how does it work?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">

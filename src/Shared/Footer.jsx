@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content">
+        <footer className="footer p-10 bg-base-content text-base-content mb-0">
             <div className='w-52'>
                 <img className='rounded-full' src={'https://i.ibb.co/m6FGWNd/Capture.png'} alt="" />
                 <p className='font-semibold text-gray-600'>Dreamland Dolls Ltd.<br />
