@@ -35,14 +35,11 @@ const Tabs = () => {
         .then(data => setToys(data))
     },[currentTab])
 
-    console.log(currentTab)
 
     const handleCategory = Category =>{
         setCurrentTab(Category)
-        console.log(Category);
     }
     
-    console.log(toys);
     return (
         <div className='container'>
             <div className='tabs flex'>
