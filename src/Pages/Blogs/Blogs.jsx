@@ -14,11 +14,12 @@ const Blogs = () => {
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
                         <p>
-                            Access Token: It`s a credential issued after user authentication, used to access specific resources for a limited time. It`s sent with each request to verify identity and permissions.
-
+                            Access Token:
+                            <br /> It`s a credential issued after user authentication, used to access specific resources for a limited time. It`s sent with each request to verify identity and permissions.
+                            <br /><br />
                             Refresh Token: It`s a long-lived credential issued alongside the access token. It`s used to obtain a new access token when the current one expires.
 
-                            Storage: Store access tokens securely, preferably in an HTTP-only cookie. Store refresh tokens securely, such as in an encrypted HTTP-only cookie or other secure storage mechanisms.
+                            Storage: <br /> Store access tokens securely, preferably in an HTTP-only cookie. Store refresh tokens securely, such as in an encrypted HTTP-only cookie or other secure storage mechanisms.
                         </p>
                     </div>
                 </div>
@@ -50,10 +51,20 @@ const Blogs = () => {
                 <div className="collapse rounded-md my-4">
                     <input type="checkbox" className="peer" />
                     <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        3.
+                        3.What is express js?
                     </div>
                     <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
-                        <p>.</p>
+                        <p>
+                            Express.js is a lightweight and flexible web application framework for Node.js. It simplifies the development process by providing a minimalistic set of features for handling HTTP requests, defining routes, managing middleware, and rendering dynamic web pages. It has gained popularity due to its ease of use, scalability, and extensive community support, making it a go-to choice for building web applications and APIs using Node.js.</p>
+                    </div>
+                </div>
+                <div className="collapse rounded-md my-4">
+                    <input type="checkbox" className="peer" />
+                    <div className="collapse-title bg-orange-400 text-white peer-checked:bg-secondary peer-checked:text-secondary-content">
+                        4. 
+                    </div>
+                    <div className="collapse-content bg-primary text-primary-content peer-checked:bg-secondary peer-checked:text-secondary-content">
+                        <p></p>
                     </div>
                 </div>
                 <div className="collapse rounded-md my-4">
