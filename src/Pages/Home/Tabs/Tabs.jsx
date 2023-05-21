@@ -29,7 +29,7 @@ const Tabs = () => {
 
     const [toys, setToys] = useState([]);
     useEffect( ()=>{
-        fetch(`http://localhost:5000/categoryToys/${currentTab}`)
+        fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/categoryToys/${currentTab}`)
         // fetch('toys.json')
         .then(res => res.json())
         .then(data => setToys(data))

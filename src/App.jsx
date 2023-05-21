@@ -21,7 +21,7 @@ function App() {
 
 
 
-
+AIzaSyAY3OCpwokV3eUe6BmXR1IOel2vPRGnW1U
 
       apiKey: "AIzaSyAY3OCpwokV3eUe6BmXR1IOel2vPRGnW1U",
       authDomain: "toys-marketplace.firebaseapp.com",

@@ -8,7 +8,7 @@ const MyToys = () => {
     const {user} = useContext(AuthContext);
     const [toys, setToys] = useState([]);
     useEffect( ()=>{
-        fetch(`http://localhost:5000/myToys/${user?.email}`)
+        fetch(`https://toy-market-place-server-jonaiedhasan.vercel.app/myToys/${user?.email}`)
         .then(res => res.json())
         .then(data => setToys(data))
     },[user])
